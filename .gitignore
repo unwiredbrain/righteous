@@ -1,0 +1,66 @@
+# Project-specific
+
+# (none)
+
+
+
+# Composer
+
+vendor/
+composer.lock
+
+
+
+# Eclipse
+
+.project
+.metadata
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch
+.cproject
+.buildpath
+
+
+
+# IntelliJ IDEA, PhpStorm, etc.
+
+*.iml
+*.ipr
+*.iws
+.idea/
+
+
+
+# NetBeans
+
+nbproject/private/
+nbbuild/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+
+
+# Mac OS X
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+
+
+# Sublime Text
+
+*.sublime-project
+*.sublime-workspace
