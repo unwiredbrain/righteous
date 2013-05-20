@@ -1,0 +1,38 @@
+{
+    "name": "unwiredbrain/righteous",
+    "type": "library",
+    "description": "A simple PHP 5.3+ data validation toolkit.",
+    "keywords": [
+        "data validation",
+        "righteous",
+        "validation"
+    ],
+    "homepage": "https://github.com/unwiredbrain/righteous",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Massimo Lombardo",
+            "email": "unwiredbrain@gmail.com",
+            "homepage": "http://unwiredbrain.com",
+            "role": "developer"
+        },
+        {
+            "name": "The Righteous contributors",
+            "homepage": "https://github.com/unwiredbrain/righteous/contributors",
+            "role": "developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/unwiredbrain/righteous/issues",
+        "wiki": "https://github.com/unwiredbrain/righteous/wiki",
+        "source": "https://github.com/unwiredbrain/righteous"
+    },
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Righteous\\": "src/"
+        }
+    }
+}
