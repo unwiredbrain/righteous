@@ -22,6 +22,6 @@ interface ValidatorInterface
      *
      * @return bool Returns TRUE if the validation was successful, FALSE otherwise.
      */
-    public static function validate();
+    public function validate();
 
 }
