@@ -13,19 +13,18 @@
 
 namespace Righteous\Validator\Url;
 
-use Righteous\ValidatorInterface;
 use Righteous\Validator\Url;
 
 /**
  * @author Massimo Lombardo <unwiredbrain@gmail.com>
  */
-class WithQuery extends Url implements ValidatorInterface
+class WithQuery extends Url
 {
 
     /**
      * {@inheritdoc}
      */
-    public static function validate()
+    public function validate()
     {
         return false !== filter_var($this->input, FILTER_VALIDATE_URL, FILTER_FLAG_QUERY_REQUIRED);
     }

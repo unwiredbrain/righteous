@@ -13,33 +13,18 @@
 
 namespace Righteous\Validator;
 
-use Righteous\ValidatorInterface;
+use Righteous\AbstractValidator;
 
 /**
  * @author Massimo Lombardo <unwiredbrain@gmail.com>
  */
-class TelephoneNumber implements ValidatorInterface
+class TelephoneNumber extends AbstractValidator
 {
-
-    /**
-     * @var string
-     */
-    protected $input = null;
-
-    /**
-     * Constructor.
-     *
-     * @param string $input The telephone number to validate.
-     */
-    public function __construct ($input)
-    {
-        $this->input = $input;
-    }
 
     /**
      * {@inheritdoc}
      */
-    public static function validate()
+    public function validate()
     {
         $input = filter_var($this->input, FILTER_SANITIZE_NUMBER_INT);
         $input = str_replace('-', '', $input);

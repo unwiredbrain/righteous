@@ -13,33 +13,18 @@
 
 namespace Righteous\Validator;
 
-use Righteous\ValidatorInterface;
+use Righteous\AbstractValidator;
 
 /**
  * @author Massimo Lombardo <unwiredbrain@gmail.com>
  */
-class Email implements ValidatorInterface
+class Email extends AbstractValidator
 {
-
-    /**
-     * @var string
-     */
-    protected $input = null;
-
-    /**
-     * Constructor.
-     *
-     * @param string $input The email address to validate.
-     */
-    public function __construct ($input)
-    {
-        $this->input = $input;
-    }
 
     /**
      * {@inheritdoc}
      */
-    public static function validate()
+    public function validate()
     {
         return false !== filter_var($this->input, FILTER_VALIDATE_EMAIL);
     }
